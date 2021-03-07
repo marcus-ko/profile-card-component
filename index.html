@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/app.css">
   
   <title>Frontend Mentor | Profile card component</title>
@@ -17,24 +19,40 @@
 </head>
 <body>
 
+  <svg id="upperCircle" width="978" height="978" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient></defs><ellipse fill="url(#a)" transform="rotate(-135 489 489)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd" opacity=".5"/></svg>
+  <svg id="lowerCircle" width="978" height="978" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient></defs><ellipse fill="url(#a)" transform="scale(1 -1) rotate(45 1669.55 0)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd" opacity=".25"/></svg>
+  <div class="card--main">
+    
+    <img id="cardPattern" src="images/bg-pattern-card.svg">
+    <div class="card--profile">
+      <img class="img--profile" src="images/image-victor.jpg" />
+     
 
-
-
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+  <div class="card--title-wrapper">
+    <p class="card--name">Victor Crest</p><span class="card--age">26</span>
+    <p class="card--city">London</p>
+  </div>
+  <div class="card--stats">
+    <ul>
+      <li>
+        <p class="card--stats-title">80K</p>
+        <p class="card--stats-subheading">Followers</p>
+      </li>
+      <li>
+        <p class="card--stats-title">803K</p>
+        <p class="card--stats-subheading">Likes</p>
+      </li>
+      <li>
+        <p class="card--stats-title">1.4K</p>
+        <p class="card--stats-subheading">Photos</p>
+      </li>
+    </ul>
+  </div>
+</div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Marcus</a>.
+  </div> -->
 </body>
 </html>
